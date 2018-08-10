@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/rysunek.ico">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="viewbox.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Indie+Flower|Nothing+You+Could+Do|Shadows+Into+Light+Two" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agroturystyka Maryśka</title>
+
+</head>
+<body>
+   <div id="fullpage">
+    <div class="section" id="s1"><div class="flex"><span class="first"><span>Agroturystyka</span> <span>Maryśka</span>
+    </span>
+    <span class="second">Sprawdź co oferujemy</span>
+       
+       
+    </div>
+     <a href="#2" style="display:contents;"><img class="scrolldown" src="img/scrolldown.svg"></a>
+       
+        </div>
+    <div class="section">
+       <div class="wrap" id="s2">
+       
+            <div class="gelement belement">
+              <div>
+              <a href="img/bg.jpg" class="gal1"></a><a href="img/bg2.jpg" class="gal1 hidden"></a>Okoliczne krajobrazy
+              
+              </div>
+            
+            </div>
+            <div class="gelement "><div>
+               <a href="img/zwierzak.jpg" class="gal2"></a>
+                <a href="img/zwierzak1.jpg" class="gal2 hidden"></a>
+                <a href="img/zwierzak2.jpg" class="gal2 hidden"></a>
+              Nasz zwierzyniec
+            
+            </div></div>
+            <div class="gelement"><div>
+            Mnóstwo atrakcji
+            
+            </div></div>
+            <div class="gelement"><div>Nowoczesne lokum</div></div>
+            <div class="gelement belement"><div>Różne aktywności</div></div>
+            <div class="gelement"><div>Okolica z historią</div></div>
+        </div>
+
+        
+     </div>
+     <div class="section" id="s3">
+         <div class="flex" >
+             <div class="offer">
+                 <div>Pokój jednoosobowy</div>
+                 <div></div>
+             </div>
+             <div class="offer">
+                 <div>Pokój dwuosobowy</div>
+                 <div></div>
+             </div>
+             <div class="offer">
+                 <div>Pokój dwuosobowy z łazienką</div>
+                 <div></div>
+             </div>
+             
+         
+         </div>
+         
+     </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery.viewbox.min.js"></script>
+<script type="text/javascript" src="fullpage.js"></script>
+
+<script type="text/javascript">
+  
+//methods
+
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            //options here
+            autoScrolling:true,
+            //scrollHorizontally: true,
+             licenseKey:"OPEN-SOURCE-GPLV3-LICENSE",
+            //sectionsColor:['red','blue','green','yellow','purple'],
+            normalScrollElementTouchThreshold:800,
+            navigation:true,
+            verticalCentered:true,
+            anchors:['1','2','3','4','5'],
+            //fitToSection:true,
+            showActiveTooltip:true,
+            keyboardScrolling:true,
+            lockAnchors:false,
+            recordHistory:false,
+        });
+
+        //methods
+       $.fn.fullpage.setAllowScrolling(true);
+        $('.gal1').viewbox({
+
+              // template
+              template: '<div class="viewbox-container"><div class="viewbox-body"><div class="viewbox-header"></div><div class="viewbox-content"></div><div class="viewbox-footer"></div></div></div>',
+
+              // loading spinner
+              loader: '<div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>',
+              setTitle: true,
+              margin: 20,
+              resizeDuration: 300,
+              openDuration: 200,
+              closeDuration: 200,
+              closeButton: true,
+              navButtons: true,
+              closeOnSideClick: true,
+              nextOnContentClick: true,
+              useGestures: true
+
+            });
+        $('.gal2').viewbox({
+
+              // template
+              template: '<div class="viewbox-container"><div class="viewbox-body"><div class="viewbox-header"></div><div class="viewbox-content"></div><div class="viewbox-footer"></div></div></div>',
+
+              // loading spinner
+              loader: '<div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>',
+              setTitle: true,
+              margin: 20,
+              resizeDuration: 300,
+              openDuration: 200,
+              closeDuration: 200,
+              closeButton: true,
+              navButtons: true,
+              closeOnSideClick: true,
+              nextOnContentClick: true,
+              useGestures: true
+
+            });
+});
+</script>
+</body>
+</html>

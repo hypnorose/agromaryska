@@ -1,0 +1,201 @@
+.section:nth-child(1){
+
+    background-image:url(img/bg.jpg);
+    //background-color:gray;
+    display:flex;
+}
+#s1{
+    position:relative;
+}
+#s2{
+    display:grid;
+    box-sizing:border-box;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1px;
+}
+section{
+    width:100%;
+    height:100vh;
+      position:relative;
+   
+}
+.wrap{
+    height:100vh;
+}
+#s1 .flex{
+   
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+   
+    flex-flow:column;
+    margin:auto;
+    width:90%;
+    height:80%;
+    
+    
+
+}
+
+@keyframes pulse{
+    0%{
+        bottom:10%;
+    }
+    70%{
+        bottom:1%;
+    }
+}
+.first{
+    text-align:center;
+   font-size:45px;
+    font-family:Shadows into Light Two;
+    color:white;  
+      
+}
+.second{
+    margin-bottom:30px;
+     font-size:20px;
+    font-family:Comfortaa;
+    color:white; 
+      background-color:rgb(30,30,30);
+    border:1px solid whitesmoke;
+    padding:10px;
+    box-shadow:0 0 2px 0.1px black;
+    border-radius:10px;
+}
+.first > span{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.scrolldown{
+    position:absolute;
+    bottom:10%;
+    height:140px;
+    max-height:190px;
+    width:140px;;
+    margin:0 auto;
+    animation-name:pulse;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+     left: 50%;
+    transform: translate(-50%, 0);
+}
+html,body{
+    width:100%;
+    
+    margin:0;
+}
+.gelement{
+    position:relative;
+    box-sizing: border-box;
+    background-position: center;
+    background-size:cover;
+    
+   
+}
+.gelement > div{
+    background-color:rgba(0,0,0,0.4);
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size:17px;
+    font-family:Shadows into Light Two;
+    color:rgb(220,220,220);
+    text-align:center;
+    transition:all 0.2s;
+}
+.gelement > div:hover{
+    color:white;
+    background-color:rgba(0,0,0,0.6);
+      background-size:auto 120%;
+}
+
+.gelement:nth-child(1){
+     background-image:url("img/bg2.jpg");
+    
+}
+.gelement:nth-child(2){
+    background-image:url("img/zwierzak.jpg");
+}
+.gelement:nth-child(3){
+    background-image:url("img/pomoscik.jpg");
+}
+.gelement:nth-child(4){
+    background-image:url("img/slajdy01.jpg");
+}
+.gelement:nth-child(5){
+    background-image:url("img/otoczenie71.jpg");
+}
+.gelement:nth-child(6){
+    background-image:url("img/male.jpg");
+}
+.belement{
+    grid-row-end: span 2;
+}
+.hidden{
+    display:none !important;
+   
+    
+}
+.gelement a{
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+/*##################*/
+/* 3 SEKCJA */
+
+
+#s3{
+    background-color:floralwhite;
+    
+}
+
+#s3 .flex{
+    margin:auto;
+    display:flex;
+    width:60%;
+    max-width:1000px;
+    height:40%;
+
+ 
+    justify-content: space-between;
+}
+.offer{
+   // border:4px solid white;    
+    border-radius:10%;
+    width:30%;
+    //background-color:slategray;
+    color:white;
+    display:flex;;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 4fr;
+    flex-flow:column;
+    overflow:hidden;
+    box-sizing:border-box;
+    min-width:200px;
+    flex-wrap:wrap;
+}
+.offer div:first-child{ 
+    background-color:dimgray;
+    height:20%;
+   
+    color:whitesmoke;
+    font-family:Shadows into Light Two;
+    font-size:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer div:nth-child(2){
+    background-color:darkgrey;
+    flex-grow:1;
+    height:60%;
+}
+
+
